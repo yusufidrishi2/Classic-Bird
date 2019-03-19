@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/exit_bg"
+    tools:context="test.yusuf.com.classicbird.MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/exit"
+        android:id="@+id/imageView8"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="@android:string/no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:textSize="14sp"
+        android:background="@android:color/holo_red_dark"
+        android:textStyle="bold"
+        android:onClick="cancel"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="101dp"
+        android:layout_alignBottom="@+id/imageView8"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+    <Button
+        android:text="@android:string/yes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button3"
+        android:background="@android:color/holo_blue_dark"
+        android:textStyle="bold"
+        android:onClick="close_app"
+        android:layout_marginRight="13dp"
+        android:layout_marginEnd="13dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView" />
+
+    <TextView
+        android:text="Are you sure you want to exit Classic Bird?"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textSize="20sp"
+        android:textColor="@android:color/background_dark"
+        android:layout_width="300dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="28dp"
+        android:layout_above="@+id/button2"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
