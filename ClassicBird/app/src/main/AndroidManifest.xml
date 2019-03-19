@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="test.yusuf.com.classicbird">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="test.yusuf.com.classicbird.MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="test.yusuf.com.classicbird.FirstActivity_xxhdpi"
+            android:screenOrientation="portrait" />
+        <activity android:name="test.yusuf.com.classicbird.SecondActivity_xxhdpi"
+            android:screenOrientation="portrait" />
+        <activity android:name="test.yusuf.com.classicbird.FirstActivity_xhdpi"
+            android:screenOrientation="portrait" />
+        <activity android:name="test.yusuf.com.classicbird.FirstActivity_hdpi"
+            android:screenOrientation="portrait" />
+        <activity android:name="test.yusuf.com.classicbird.FirstActivity_mdpi"
+            android:screenOrientation="portrait" />
+        <activity android:name="test.yusuf.com.classicbird.FirstActivity_ldpi"
+            android:screenOrientation="portrait" />
+        <activity android:name="test.yusuf.com.classicbird.SecondActivity_xhdpi"
+            android:screenOrientation="portrait" />
+        <activity android:name="test.yusuf.com.classicbird.SecondActivity_hdpi"
+            android:screenOrientation="portrait"/>
+        <activity android:name="test.yusuf.com.classicbird.SecondActivity_mdpi"
+            android:screenOrientation="portrait"/>
+        <activity android:name="test.yusuf.com.classicbird.SecondActivity_ldpi"
+            android:screenOrientation="portrait"/>
+        <activity android:name="test.yusuf.com.classicbird.ThirdActivity"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>
